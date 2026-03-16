@@ -34,6 +34,13 @@ header { display:flex; justify-content:space-between; padding:20px 40px; backgro
 
 footer { text-align:center; padding:20px; background:#020617; color:#94a3b8; }
 
+.contact a {
+  display:block;
+  color:#22c55e;
+  margin-top:10px;
+  text-decoration:none;
+}
+
 @media(max-width:768px){ .grid{grid-template-columns:1fr;} }
 </style>
 </head>
@@ -45,6 +52,8 @@ footer { text-align:center; padding:20px; background:#020617; color:#94a3b8; }
 <div class="nav">
 <a href="#how">How it Works</a>
 <a href="#deal">Opportunities</a>
+<a href="#liquidity">Exit</a>
+<a href="#contact">Contact</a>
 <a href="#faq">FAQ</a>
 </div>
 </header>
@@ -52,64 +61,42 @@ footer { text-align:center; padding:20px; background:#020617; color:#94a3b8; }
 <!-- HERO -->
 <section class="hero">
 <h1>Own Income-Generating Commercial Real Estate</h1>
-<p>Invest in pre-leased commercial properties and earn rental income + capital appreciation starting from ₹50,000.</p>
-<p>Access deals previously available only to high-net-worth individuals.</p>
+<p>Earn rental income + capital appreciation starting from ₹50,000.</p>
+<p>Access institutional-grade real estate investments.</p>
 <a href="#form"><button class="cta-btn">Start Investing</button></a>
 </section>
 
-  <!-- FORM -->
-<section class="section" id="form">
-<h2>Join Investor Waitlist</h2>
-
-<div style="background:#1e293b;padding:20px;border-radius:10px;">
-<iframe src="https://forms.gle/X7iPj2RKo1L4Nkcq9" width="100%" height="700"></iframe>
-</div>
-
-</section>
-  
 <!-- WHAT IS -->
 <section class="section">
 <h2>What is BrickShare?</h2>
 <div class="card">
 <p>
-BrickShare is a fractional real estate platform that allows multiple investors to collectively own commercial properties.
-Instead of investing ₹50 lakh alone, you can invest a smaller amount and still earn proportional returns.
+BrickShare allows multiple investors to collectively own commercial real estate 
+through fractional ownership.
 </p>
 </div>
 </section>
 
-<!-- INVESTMENT JOURNEY -->
+<!-- JOURNEY -->
 <section class="section">
-<h2>Your Complete Investment Journey</h2>
-
-<div class="card"><strong>Step 1:</strong> Browse properties with full details (rent, tenant, returns).</div>
-
-<div class="card"><strong>Step 2:</strong> Choose how much you want to invest. Each unit = fractional ownership.</div>
-
-<div class="card"><strong>Step 3:</strong> Funds are collected securely. Property is bought only after full funding.</div>
-
-<div class="card"><strong>Step 4:</strong> Property is purchased via SPV. You legally own shares in the SPV.</div>
-
-<div class="card"><strong>Step 5:</strong> Rent is collected and distributed to investors regularly.</div>
-
-<div class="card"><strong>Step 6:</strong> We manage tenants, maintenance, and legal work.</div>
-
-<div class="card"><strong>Step 7:</strong> Exit through resale or final property sale with capital appreciation.</div>
-
+<h2>Your Investment Journey</h2>
+<div class="card">1. Browse and select property</div>
+<div class="card">2. Invest in units</div>
+<div class="card">3. Funds collected</div>
+<div class="card">4. Property purchased via SPV</div>
+<div class="card">5. Earn rental income</div>
+<div class="card">6. We manage everything</div>
+<div class="card">7. Exit with profits</div>
 </section>
 
 <!-- PROPERTY -->
 <section class="section" id="deal">
 <h2>Featured Opportunity</h2>
-
 <div class="card">
 <h3>Retail Pharmacy – Lucknow</h3>
-
-<p><strong>Property Value:</strong> ₹50,00,000</p>
-<p><strong>Minimum Investment:</strong> ₹50,000</p>
-<p><strong>Monthly Rent:</strong> ₹40,000</p>
-<p><strong>Target Yield:</strong> 8–9%</p>
-<p><strong>Lease Term:</strong> 9 Years</p>
+<p>Value: ₹50,00,000</p>
+<p>Minimum Investment: ₹50,000</p>
+<p>Rent: ₹40,000/month</p>
 
 <div class="progress-bar"><div class="progress"></div></div>
 
@@ -123,27 +110,23 @@ Instead of investing ₹50 lakh alone, you can invest a smaller amount and still
 <h2>Projected Returns</h2>
 <div class="card">
 <p>Rental income + capital appreciation over 5–7 years.</p>
-<p>Expected rent growth: ~5% annually.</p>
 </div>
 </section>
 
 <!-- CASE STUDIES -->
 <section class="section">
-<h2>Investment Case Studies</h2>
+<h2>Case Studies</h2>
 
 <div class="card">
-<h3>Best Case Scenario</h3>
-<p>₹1,00,000 → ₹2,55,000 in 6 years</p>
-<p>Rental Income: ₹55,000 | Capital Gain: ₹1,00,000</p>
+<h3>Best Case</h3>
+<p>₹1L → ₹2.55L</p>
 </div>
 
 <div class="card">
-<h3>Worst Case Scenario</h3>
-<p>₹1,00,000 → ₹1,60,000 in 6 years</p>
-<p>Lower rent + vacancy + slow appreciation</p>
+<h3>Worst Case</h3>
+<p>₹1L → ₹1.6L</p>
 </div>
 
-<p style="color:#94a3b8;">Illustrative only. Returns not guaranteed.</p>
 </section>
 
 <!-- CHART -->
@@ -157,8 +140,8 @@ Instead of investing ₹50 lakh alone, you can invest a smaller amount and still
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
 new Chart(document.getElementById('chart'), {
-type: 'line',
-data: {
+type:'line',
+data:{
 labels:['Y0','Y1','Y2','Y3','Y4','Y5','Y6'],
 datasets:[
 {label:'Best Case', data:[100,115,130,160,190,220,255]},
@@ -168,91 +151,92 @@ datasets:[
 });
 </script>
 
-<!-- RISKS -->
-<section class="section">
-<h2>Risks Involved</h2>
+<!-- LIQUIDITY -->
+<section class="section" id="liquidity">
+<h2>Liquidity & Exit Options</h2>
+
 <div class="card">
-<p>• Tenant may vacate</p>
-<p>• Property value may fluctuate</p>
-<p>• Limited liquidity</p>
-<p>• Returns are not guaranteed</p>
+<strong>Lock-in Period:</strong>
+<p>Minimum 2 years to ensure stability.</p>
+</div>
+
+<div class="card">
+<strong>Annual Investor Vote:</strong>
+<p>Investors can vote annually to sell the property.</p>
+</div>
+
+<div class="card">
+<strong>Secondary Market:</strong>
+<p>Sell your units to other investors or possibly back to us.</p>
+</div>
+
+<div class="card">
+<strong>Lease-End Exit:</strong>
+<p>Property sold after lease completion.</p>
+</div>
+
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+<h2>Contact Us</h2>
+
+<div class="card contact">
+<p>Have questions or want to invest? Reach out to us directly:</p>
+
+<a href="mailto:brickshareinvestments@mail.com">
+📧 Email: brickshareinvestments@mail.com
+</a>
+
+<a href="https://wa.me/918858665994" target="_blank">
+📱 WhatsApp: +91 88586 65994
+</a>
+
+<a href="https://wa.me/916394827639" target="_blank">
+📱 WhatsApp: +91 63948 27639
+</a>
+
+<p>
+We usually respond within a few hours. Feel free to reach out for 
+investment details, queries, or partnership opportunities.
+</p>
 </div>
 </section>
 
-<!-- BUSINESS MODEL -->
-<section class="section">
-<h2>Business Model</h2>
-<div class="card">
-<p>We earn through platform fees, management fees, and exit fees.</p>
-<p>Our goal is to make real estate accessible and transparent.</p>
+<!-- FORM -->
+<section class="section" id="form">
+<h2>Join Waitlist</h2>
+
+<div style="background:#1e293b;padding:20px;border-radius:10px;">
+<iframe src="https://forms.gle/X7iPj2RKo1L4Nkcq9" width="100%" height="700"></iframe>
 </div>
+
 </section>
 
-<!-- LEGAL -->
-<section class="section">
-<h2>Legal Structure</h2>
-<div class="card">
-<p>Each property is owned via an SPV (Special Purpose Vehicle).</p>
-<p>Investors own shares in the SPV, not direct property title.</p>
-</div>
-</section>
-
-
-
-<!-- MASSIVE FAQ -->
+<!-- FAQ -->
 <section class="section" id="faq">
-<h2>Frequently Asked Questions</h2>
+<h2>FAQ</h2>
 
 <div class="card">
-<strong>How exactly do I make money?</strong>
-<p>You earn through rental income (paid periodically) and capital appreciation when the property value increases and is sold.</p>
+<strong>How do I invest?</strong>
+<p>Select a property and invest in units.</p>
 </div>
 
 <div class="card">
-<strong>Do I legally own the property?</strong>
-<p>You own shares in the SPV that owns the property. Your ownership is proportional to your investment.</p>
+<strong>How do I exit?</strong>
+<p>Through resale, voting, or property sale.</p>
 </div>
 
 <div class="card">
-<strong>What happens if the tenant leaves?</strong>
-<p>There may be a temporary loss of rental income. We work to find a new tenant quickly.</p>
-</div>
-
-<div class="card">
-<strong>Can I exit anytime?</strong>
-<p>Real estate is not highly liquid. Exit options include selling to another investor or waiting for final sale.</p>
-</div>
-
-<div class="card">
-<strong>Are returns guaranteed?</strong>
-<p>No. Returns depend on market conditions, tenant performance, and property value changes.</p>
-</div>
-
-<div class="card">
-<strong>How is rent distributed?</strong>
-<p>Rent is collected and distributed monthly or quarterly after expenses.</p>
-</div>
-
-<div class="card">
-<strong>What taxes apply?</strong>
-<p>Rental income is taxed as per your income slab. Capital gains apply on exit.</p>
-</div>
-
-<div class="card">
-<strong>Who manages the property?</strong>
-<p>We handle tenant management, maintenance, and legal compliance.</p>
-</div>
-
-<div class="card">
-<strong>What is the ideal holding period?</strong>
-<p>5–7 years for optimal returns.</p>
+<strong>Returns guaranteed?</strong>
+<p>No, market-linked.</p>
 </div>
 
 </section>
 
 <footer>
 <p>© 2026 BrickShare</p>
-<p>Investments carry risk. Not a guaranteed return product.</p>
+<p>Investments carry risk.</p>
 </footer>
 
 </body>
