@@ -6,182 +6,86 @@
 <title>BrickShare | Fractional Real Estate</title>
 
 <style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #0f172a;
-  color: white;
-}
+body { margin:0; font-family:Arial; background:#0f172a; color:white; }
+header { display:flex; justify-content:space-between; padding:20px 40px; background:#020617; }
+.logo { font-size:1.5rem; font-weight:bold; }
+.nav a { color:white; margin-left:20px; text-decoration:none; }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 40px;
-  background: #020617;
-}
-
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.nav a {
-  color: white;
-  margin-left: 20px;
-  text-decoration: none;
-}
-
-.hero {
-  text-align: center;
-  padding: 80px 20px;
-}
-
-.hero h1 {
-  font-size: 2.8rem;
-}
-
-.hero p {
-  color: #94a3b8;
-}
+.hero { text-align:center; padding:80px 20px; }
+.hero h1 { font-size:2.8rem; }
+.hero p { color:#94a3b8; }
 
 .cta-btn {
-  background: #22c55e;
-  padding: 15px 25px;
-  border: none;
-  font-weight: bold;
-  margin-top: 20px;
-  cursor: pointer;
+  background:#22c55e;
+  padding:15px 25px;
+  border:none;
+  font-weight:bold;
+  margin-top:20px;
+  cursor:pointer;
+  border-radius:6px;
 }
 
-.section {
-  padding: 50px 20px;
-  max-width: 1000px;
-  margin: auto;
-}
+.section { padding:50px 20px; max-width:1000px; margin:auto; }
+.card { background:#1e293b; padding:20px; border-radius:10px; margin:15px 0; }
+.grid { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
 
-.card {
-  background: #1e293b;
-  padding: 20px;
-  border-radius: 10px;
-  margin: 15px 0;
-}
+.progress-bar { background:#334155; border-radius:20px; }
+.progress { background:#22c55e; width:65%; padding:5px; border-radius:20px; }
 
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-}
+footer { text-align:center; padding:20px; background:#020617; color:#94a3b8; }
 
-.progress-bar {
-  background: #334155;
-  border-radius: 20px;
-}
-
-.progress {
-  background: #22c55e;
-  width: 65%;
-  padding: 5px;
-}
-
-footer {
-  text-align: center;
-  padding: 20px;
-  background: #020617;
-  color: #94a3b8;
-}
-
-@media(max-width: 768px){
-  .grid { grid-template-columns: 1fr; }
-}
+@media(max-width:768px){ .grid{grid-template-columns:1fr;} }
 </style>
 </head>
 
 <body>
 
 <header>
-  <div class="logo">BrickShare</div>
-  <div class="nav">
-    <a href="#how">How it Works</a>
-    <a href="#deal">Opportunities</a>
-    <a href="#faq">FAQ</a>
-  </div>
+<div class="logo">BrickShare</div>
+<div class="nav">
+<a href="#how">How it Works</a>
+<a href="#deal">Opportunities</a>
+<a href="#faq">FAQ</a>
+</div>
 </header>
 
 <!-- HERO -->
 <section class="hero">
 <h1>Own Income-Generating Commercial Real Estate</h1>
-
-<p>
-Invest in pre-leased commercial properties and earn consistent rental income 
-along with long-term capital appreciation — starting from just ₹50,000.
-</p>
-
-<p>
-Access institutional-grade real estate deals previously available only to 
-high-net-worth individuals.
-</p>
-
+<p>Invest in pre-leased commercial properties and earn rental income + capital appreciation starting from ₹50,000.</p>
+<p>Access deals previously available only to high-net-worth individuals.</p>
 <a href="#form"><button class="cta-btn">Start Investing</button></a>
 </section>
 
 <!-- WHAT IS -->
 <section class="section">
 <h2>What is BrickShare?</h2>
-
 <div class="card">
 <p>
-BrickShare is a fractional real estate investment platform that allows multiple 
-investors to collectively own high-quality commercial properties.
-</p>
-
-<p>
-Instead of buying an entire property worth ₹50 lakh or more, you can invest a 
-fraction of the value and earn returns proportional to your ownership.
-</p>
-
-<p>
-We focus on leased commercial assets such as retail stores, pharmacies, 
-offices, and warehouses that generate stable monthly rental income.
+BrickShare is a fractional real estate platform that allows multiple investors to collectively own commercial properties.
+Instead of investing ₹50 lakh alone, you can invest a smaller amount and still earn proportional returns.
 </p>
 </div>
 </section>
 
-<!-- HOW IT WORKS -->
-<section class="section" id="how">
-<h2>How It Works</h2>
+<!-- INVESTMENT JOURNEY -->
+<section class="section">
+<h2>Your Complete Investment Journey</h2>
 
-<div class="card">
-<strong>1. Property Sourcing & Due Diligence</strong>
-<p>
-We identify high-potential commercial properties in prime locations with 
-existing tenants. Each deal is evaluated based on rental yield, tenant 
-quality, lease duration, and growth potential.
-</p>
-</div>
+<div class="card"><strong>Step 1:</strong> Browse properties with full details (rent, tenant, returns).</div>
 
-<div class="card">
-<strong>2. Fractional Ownership Structure</strong>
-<p>
-The property is divided into investment units. Investors purchase these units 
-and become fractional owners through a structured investment model.
-</p>
-</div>
+<div class="card"><strong>Step 2:</strong> Choose how much you want to invest. Each unit = fractional ownership.</div>
 
-<div class="card">
-<strong>3. Rental Income Distribution</strong>
-<p>
-Rental income is collected and distributed to investors periodically after 
-expenses.
-</p>
-</div>
+<div class="card"><strong>Step 3:</strong> Funds are collected securely. Property is bought only after full funding.</div>
 
-<div class="card">
-<strong>4. Exit & Capital Appreciation</strong>
-<p>
-Investors benefit from property appreciation and exit through resale or final 
-asset sale.
-</p>
-</div>
+<div class="card"><strong>Step 4:</strong> Property is purchased via SPV. You legally own shares in the SPV.</div>
+
+<div class="card"><strong>Step 5:</strong> Rent is collected and distributed to investors regularly.</div>
+
+<div class="card"><strong>Step 6:</strong> We manage tenants, maintenance, and legal work.</div>
+
+<div class="card"><strong>Step 7:</strong> Exit through resale or final property sale with capital appreciation.</div>
+
 </section>
 
 <!-- PROPERTY -->
@@ -194,22 +98,10 @@ asset sale.
 <p><strong>Property Value:</strong> ₹50,00,000</p>
 <p><strong>Minimum Investment:</strong> ₹50,000</p>
 <p><strong>Monthly Rent:</strong> ₹40,000</p>
-<p><strong>Annual Rent:</strong> ₹4,80,000</p>
 <p><strong>Target Yield:</strong> 8–9%</p>
-<p><strong>Lease:</strong> 9 Years</p>
+<p><strong>Lease Term:</strong> 9 Years</p>
 
-<hr>
-
-<p><strong>Tenant Details:</strong> Established pharmacy chain with steady demand.</p>
-
-<p><strong>Location Advantage:</strong> High footfall near hospitals and residential areas.</p>
-
-<p><strong>Investment Structure:</strong> 100 units of ₹50,000 each.</p>
-
-<p>Funding Progress:</p>
-<div class="progress-bar">
-  <div class="progress"></div>
-</div>
+<div class="progress-bar"><div class="progress"></div></div>
 
 <br>
 <a href="#form"><button class="cta-btn">Invest Now</button></a>
@@ -219,60 +111,79 @@ asset sale.
 <!-- RETURNS -->
 <section class="section">
 <h2>Projected Returns</h2>
-
 <div class="card">
-<p>Rental Income: ~₹4.8 lakh/year</p>
-<p>Expected Yield: 8–9%</p>
-<p>Rent Growth: 5% annually</p>
-<p>Holding Period: 5–7 years</p>
-<p>Estimated Property Value: ₹1 crore</p>
-
-<p>
-Returns include both rental income and capital appreciation.
-</p>
+<p>Rental income + capital appreciation over 5–7 years.</p>
+<p>Expected rent growth: ~5% annually.</p>
 </div>
 </section>
+
+<!-- CASE STUDIES -->
+<section class="section">
+<h2>Investment Case Studies</h2>
+
+<div class="card">
+<h3>Best Case Scenario</h3>
+<p>₹1,00,000 → ₹2,55,000 in 6 years</p>
+<p>Rental Income: ₹55,000 | Capital Gain: ₹1,00,000</p>
+</div>
+
+<div class="card">
+<h3>Worst Case Scenario</h3>
+<p>₹1,00,000 → ₹1,60,000 in 6 years</p>
+<p>Lower rent + vacancy + slow appreciation</p>
+</div>
+
+<p style="color:#94a3b8;">Illustrative only. Returns not guaranteed.</p>
+</section>
+
+<!-- CHART -->
+<section class="section">
+<h2>Return Comparison</h2>
+<div class="card">
+<canvas id="chart"></canvas>
+</div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+new Chart(document.getElementById('chart'), {
+type: 'line',
+data: {
+labels:['Y0','Y1','Y2','Y3','Y4','Y5','Y6'],
+datasets:[
+{label:'Best Case', data:[100,115,130,160,190,220,255]},
+{label:'Worst Case', data:[100,105,110,115,125,140,160]}
+]
+}
+});
+</script>
 
 <!-- RISKS -->
 <section class="section">
 <h2>Risks Involved</h2>
-
 <div class="card">
-<p>• Tenant vacancy risk</p>
-<p>• Market fluctuations</p>
-<p>• Liquidity limitations</p>
+<p>• Tenant may vacate</p>
+<p>• Property value may fluctuate</p>
+<p>• Limited liquidity</p>
 <p>• Returns are not guaranteed</p>
 </div>
 </section>
 
-<!-- WHY US -->
+<!-- BUSINESS MODEL -->
 <section class="section">
-<h2>Why BrickShare?</h2>
-
-<div class="grid">
-<div class="card">Low entry barrier</div>
-<div class="card">Passive income</div>
-<div class="card">Premium deals</div>
-<div class="card">Managed investments</div>
+<h2>Business Model</h2>
+<div class="card">
+<p>We earn through platform fees, management fees, and exit fees.</p>
+<p>Our goal is to make real estate accessible and transparent.</p>
 </div>
 </section>
 
 <!-- LEGAL -->
 <section class="section">
 <h2>Legal Structure</h2>
-
 <div class="card">
-<p>
-Each property is owned through an SPV (Special Purpose Vehicle).
-</p>
-
-<p>
-Investors hold proportional ownership in the SPV.
-</p>
-
-<p>
-All investments are subject to Indian laws and regulations.
-</p>
+<p>Each property is owned via an SPV (Special Purpose Vehicle).</p>
+<p>Investors own shares in the SPV, not direct property title.</p>
 </div>
 </section>
 
@@ -280,48 +191,66 @@ All investments are subject to Indian laws and regulations.
 <section class="section" id="form">
 <h2>Join Investor Waitlist</h2>
 
-<section class="section" id="form">
-<h2>Join Investor Waitlist</h2>
-
-<div style="background:#1e293b; padding:20px; border-radius:10px;">
-  <iframe 
-    src="PASTE_YOUR_GOOGLE_FORM_EMBED_LINK_HERE"
-    width="100%" 
-    height="700" 
-    style="border:none;">
-  </iframe>
+<div style="background:#1e293b;padding:20px;border-radius:10px;">
+<iframe src="https://forms.gle/X7iPj2RKo1L4Nkcq9" width="100%" height="700"></iframe>
 </div>
 
 </section>
 
-<!-- FAQ -->
+<!-- MASSIVE FAQ -->
 <section class="section" id="faq">
-<h2>FAQ</h2>
+<h2>Frequently Asked Questions</h2>
 
 <div class="card">
-<strong>Minimum investment?</strong>
-<p>₹50,000</p>
+<strong>How exactly do I make money?</strong>
+<p>You earn through rental income (paid periodically) and capital appreciation when the property value increases and is sold.</p>
 </div>
 
 <div class="card">
-<strong>How do I earn?</strong>
-<p>Rental income + appreciation</p>
+<strong>Do I legally own the property?</strong>
+<p>You own shares in the SPV that owns the property. Your ownership is proportional to your investment.</p>
 </div>
 
 <div class="card">
-<strong>Exit?</strong>
-<p>Sell units or exit on property sale</p>
+<strong>What happens if the tenant leaves?</strong>
+<p>There may be a temporary loss of rental income. We work to find a new tenant quickly.</p>
 </div>
 
 <div class="card">
-<strong>Rent frequency?</strong>
-<p>Monthly/Quarterly</p>
+<strong>Can I exit anytime?</strong>
+<p>Real estate is not highly liquid. Exit options include selling to another investor or waiting for final sale.</p>
 </div>
+
+<div class="card">
+<strong>Are returns guaranteed?</strong>
+<p>No. Returns depend on market conditions, tenant performance, and property value changes.</p>
+</div>
+
+<div class="card">
+<strong>How is rent distributed?</strong>
+<p>Rent is collected and distributed monthly or quarterly after expenses.</p>
+</div>
+
+<div class="card">
+<strong>What taxes apply?</strong>
+<p>Rental income is taxed as per your income slab. Capital gains apply on exit.</p>
+</div>
+
+<div class="card">
+<strong>Who manages the property?</strong>
+<p>We handle tenant management, maintenance, and legal compliance.</p>
+</div>
+
+<div class="card">
+<strong>What is the ideal holding period?</strong>
+<p>5–7 years for optimal returns.</p>
+</div>
+
 </section>
 
 <footer>
 <p>© 2026 BrickShare</p>
-<p>This is not an offer to sell securities. Investments carry risk.</p>
+<p>Investments carry risk. Not a guaranteed return product.</p>
 </footer>
 
 </body>
